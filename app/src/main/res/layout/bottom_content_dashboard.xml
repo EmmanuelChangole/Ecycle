@@ -1,0 +1,28 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        >
+        <View
+            android:id="@+id/view1"
+            android:background="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"/>
+
+        <GridView
+            android:id="@+id/grid_view_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/view1"
+            android:layout_marginTop="5dp"
+            android:horizontalSpacing="2pt"
+            android:numColumns="auto_fit"
+            android:verticalSpacing="2pt">
+
+        </GridView>
+
+    </RelativeLayout>
+
+</merge>
