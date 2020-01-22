@@ -3,8 +3,11 @@
 
 
     <group android:menuCategory="system">
-        <item android:title="Log out"  android:id="@+id/logout"></item>
-
+        <item android:title="Share"  android:id="@+id/share"></item>
+        <item android:title="Rate"  android:id="@+id/rate"></item>
+        <item android:title="Credit"  android:id="@+id/credit"></item>
+        <item android:title="Bibliography"  android:id="@+id/bibliography"></item>
+        <item android:title="Settings"  android:id="@+id/settings"></item>
 
     </group>
 

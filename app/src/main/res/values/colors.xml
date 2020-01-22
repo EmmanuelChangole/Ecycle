@@ -6,5 +6,13 @@
     <color name="colorCustomPink">#B500E1</color>
     <color name="colorCustomBlue">#6E00DD</color>
     <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorBrown">#8E7E7F</color>
+    <color name="colorFadeRed">#FD7173</color>
+    <color name="colorGreen">#7EE972</color>
+    <color name="colorOrange">#E7DD77</color>
+    <color name="colorPromptOrange">#70F38A5C</color>
+
+
 
 </resources>

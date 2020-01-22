@@ -3,7 +3,7 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimary">@color/colorCustomPink</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
@@ -12,6 +12,32 @@
         <item name="colorPrimary">@color/colorCustomPink</item>
         <item name="colorPrimaryDark">@color/colorCustomPink</item>
         <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppTheme_Custom_E_cycle" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorBrown</item>
+        <item name="colorPrimaryDark">@color/colorBrown</item>
+        <item name="colorAccent">@color/colorBrown</item>
+    </style>
+
+    <style name="AppTheme_Custom_effects" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorFadeRed</item>
+        <item name="colorPrimaryDark">@color/colorFadeRed</item>
+        <item name="colorAccent">@color/colorFadeRed</item>
+    </style>
+
+    <style name="AppTheme_Custom_manage" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorGreen</item>
+        <item name="colorPrimaryDark">@color/colorGreen</item>
+        <item name="colorAccent">@color/colorGreen</item>
+    </style>
+    <style name="AppTheme_Custom_statistics" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorOrange</item>
+        <item name="colorPrimaryDark">@color/colorOrange</item>
+        <item name="colorAccent">@color/colorOrange</item>
     </style>
 
 </resources>

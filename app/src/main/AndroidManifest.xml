@@ -9,8 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"/>
-        <activity android:name=".ui.SplashActivity" android:theme="@style/AppTheme_Custom">
+        <activity android:name=".ui.StatisticsActivity" android:theme="@style/AppTheme_Custom_statistics"></activity>
+        <activity android:name=".ui.ManagementActivity" android:theme="@style/AppTheme_Custom_manage" />
+        <activity android:name=".ui.EffectsActivity" android:theme="@style/AppTheme_Custom_effects"/>
+        <activity android:name=".ui.TestUi" android:theme="@style/AppTheme_Custom_effects"/>
+        <activity
+            android:name=".ui.EcycleActivity"
+            android:theme="@style/AppTheme_Custom_E_cycle" />
+        <activity
+            android:name=".ui.MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity
+            android:name=".ui.SplashActivity"
+            android:theme="@style/AppTheme_Custom">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

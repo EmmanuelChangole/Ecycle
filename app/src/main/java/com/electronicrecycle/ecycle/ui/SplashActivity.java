@@ -3,7 +3,6 @@ package com.electronicrecycle.ecycle.ui;
 import android.content.Intent;
 
 import com.daimajia.androidanimations.library.Techniques;
-import com.electronicrecycle.ecycle.MainActivity;
 import com.electronicrecycle.ecycle.R;
 import com.viksaa.sssplash.lib.activity.AwesomeSplash;
 import com.viksaa.sssplash.lib.cnst.Flags;

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@drawable/ic_statistics_background"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+
+    </RelativeLayout>
+
+    <ListView
+        android:layout_below="@id/relativeLayout1"
+        android:id="@+id/statisticsList"
+        android:layout_width="match_parent"
+        android:divider="@null"
+        android:dividerHeight="18dp"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="10dp"
+        android:layout_height="match_parent" >
+    </ListView>
+
+</RelativeLayout>

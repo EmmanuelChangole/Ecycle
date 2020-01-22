@@ -1,4 +1,4 @@
-package com.electronicrecycle.ecycle;
+package com.electronicrecycle.ecycle.ui;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -15,7 +15,9 @@ import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
 
+import com.electronicrecycle.ecycle.R;
 import com.electronicrecycle.ecycle.models.AdapterItems;
+import com.electronicrecycle.ecycle.ui.EcycleActivity;
 
 import java.util.ArrayList;
 
@@ -146,18 +148,21 @@ public class MainActivity extends AppCompatActivity {
         switch (i)
         {
             case 1:
-
+                    Intent eCycle=new Intent(this, EcycleActivity.class);
+                    startActivity(eCycle);
                 break;
             case 2:
-
-
+                Intent effects=new Intent(this, EffectsActivity.class);
+                startActivity(effects);
 
                 break;
             case 3:
-
+                Intent manage=new Intent(this, ManagementActivity.class);
+                startActivity(manage);
                 break;
             case 4:
-
+                Intent statistics=new Intent(this, StatisticsActivity.class);
+                startActivity(statistics);
                 break;
         }
     }
