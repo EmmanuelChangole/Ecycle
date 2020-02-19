@@ -2,10 +2,12 @@ package com.electronicrecycle.ecycle.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.electronicrecycle.ecycle.R;
@@ -20,15 +22,33 @@ public class ManagementActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_management);
+        RelativeLayout relativeLayout3=(RelativeLayout)findViewById(R.id.relativeLayout3);
+        relativeLayout3.setVisibility(View.GONE);
+
         ArrayList userList = getListData();
         final ListView lv = (ListView) findViewById(R.id.managementList);
+        lv.setVisibility(View.VISIBLE);
         lv.setAdapter(new CustomListAdapter(this, userList));
         lv.setOnItemClickListener(
                 new AdapterView.OnItemClickListener() {
                     @Override
                     public void onItemClick(AdapterView<?> parent, View view, int position, long id)
                     {
-                        Toast.makeText(ManagementActivity.this, "you have clicked "+position, Toast.LENGTH_SHORT).show();
+                      switch (position)
+                      {
+                          case 0:
+                              Intent tips=new Intent(ManagementActivity.this,TipsOnEwaste.class);
+                              startActivity(tips);
+                              break;
+                          case 1:
+                              Intent curbing=new Intent(ManagementActivity.this,CurbingWaste.class);
+                              startActivity(curbing);
+                              break;
+                          case 2:
+                              Intent produts=new Intent(ManagementActivity.this,ProductsOfEwaste.class);
+                              startActivity(produts);
+                              break;
+                      }
 
                     }
                 }

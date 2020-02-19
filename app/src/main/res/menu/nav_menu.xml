@@ -3,11 +3,11 @@
 
 
     <group android:menuCategory="system">
-        <item android:title="Share"  android:id="@+id/share"></item>
-        <item android:title="Rate"  android:id="@+id/rate"></item>
-        <item android:title="Credit"  android:id="@+id/credit"></item>
-        <item android:title="Bibliography"  android:id="@+id/bibliography"></item>
-        <item android:title="Settings"  android:id="@+id/settings"></item>
+        <item android:title="Share"  android:id="@+id/share" android:icon="@drawable/ic_share"></item>
+        <item android:title="Rate"  android:id="@+id/rate" android:icon="@drawable/ic_rate"></item>
+        <item android:title="Credit"  android:id="@+id/credit" android:icon="@drawable/ic_credit"></item>
+        <item android:title="Bibliography"  android:id="@+id/bibliography" android:icon="@drawable/ic_graphy"></item>
+        <item android:title="Settings"  android:id="@+id/settings" android:icon="@drawable/ic_settings"></item>
 
     </group>
 

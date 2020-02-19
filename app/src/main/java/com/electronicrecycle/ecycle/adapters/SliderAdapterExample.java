@@ -14,6 +14,20 @@ import com.smarteist.autoimageslider.SliderViewAdapter;
 public class SliderAdapterExample extends SliderViewAdapter<SliderAdapterExample.SliderAdapterVH> {
 
     private Context context;
+      int imageAddress[];
+
+
+    public void initAddress(int request[])
+    {
+        imageAddress=new int[request.length];
+        for(int i=0;i<imageAddress.length;i++)
+        {
+            imageAddress[i]=request[i];
+
+        }
+
+
+    }
 
     public SliderAdapterExample(Context context) {
         this.context = context;
@@ -29,29 +43,74 @@ public class SliderAdapterExample extends SliderViewAdapter<SliderAdapterExample
     public void onBindViewHolder(SliderAdapterVH viewHolder, int position) {
         viewHolder.textViewDescription.setText("");
 
-        switch (position) {
-            case 0:
+
+          if(imageAddress!=null)
+          {
+              switch (position)
+              {
+
+                  case 0:
+                      Glide.with(viewHolder.itemView)
+                              .load(imageAddress[0])
+                              .into(viewHolder.imageViewBackground);
+                      break;
+                  case 1:
+                      Glide.with(viewHolder.itemView)
+                              .load(imageAddress[1])
+                              .into(viewHolder.imageViewBackground);
+                      break;
+                  case 2:
+                      Glide.with(viewHolder.itemView)
+                              .load(imageAddress[2])
+                              .into(viewHolder.imageViewBackground);
+                      break;
+                  case 3:
+                      Glide.with(viewHolder.itemView)
+                              .load(imageAddress[3])
+                              .into(viewHolder.imageViewBackground);
+                      break;
+                  default:
+                      Glide.with(viewHolder.itemView)
+                              .load(imageAddress[0])
+                              .into(viewHolder.imageViewBackground);
+                      break;
+
+              }
+          }
+
+
+
+
+
+
+
+        //switch (position) {
+
+
+
+
+           /* case 0:
                 Glide.with(viewHolder.itemView)
-                        .load("https://image.shutterstock.com/image-photo/old-computer-electronic-waste-recycling-260nw-764268184.jpg")
+                        .load(R.drawable.waste)
                         .into(viewHolder.imageViewBackground);
                 break;
             case 1:
                 Glide.with(viewHolder.itemView)
-                        .load("https://healthyridepgh.com/wp-content/uploads/sites/3/2015/08/HPC-Friends-01.png")
+                        .load(R.drawable.waste)
                         .into(viewHolder.imageViewBackground);
                 break;
             case 2:
                 Glide.with(viewHolder.itemView)
-                        .load("http://www.standupforwomenssafety.org/images/stand-up-for-womens-safety.png")
+                        .load(R.drawable.waste)
                         .into(viewHolder.imageViewBackground);
                 break;
             default:
                 Glide.with(viewHolder.itemView)
-                        .load("http://whysolution.com/wp-content/uploads/2016/07/morning-walk-qiw.png")
+                        .load(R.drawable.waste)
                         .into(viewHolder.imageViewBackground);
-                break;
+                break;*/
 
-        }
+       // }
 
     }
 

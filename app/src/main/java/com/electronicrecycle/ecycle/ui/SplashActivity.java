@@ -13,14 +13,14 @@ public class SplashActivity extends AwesomeSplash {
     public void initSplash(ConfigSplash configSplash)
     {
         //splash screen background properties
-        configSplash.setBackgroundColor(R.color.colorCustomPink);//any color you want form colors.xml
+        configSplash.setBackgroundColor(R.color.colorPromptGreen);//any color you want form colors.xml
         configSplash.setAnimCircularRevealDuration(2000); //int ms
         configSplash.setRevealFlagX(Flags.REVEAL_TOP);  //or Flags.REVEAL_LEFT
         configSplash.setRevealFlagY(Flags.REVEAL_TOP);
         //logo properties
         configSplash.setLogoSplash(R.drawable.ic_logo);
         configSplash.setAnimLogoSplashDuration(3500);
-        configSplash.setAnimLogoSplashTechnique(Techniques.RubberBand);
+        configSplash.setAnimLogoSplashTechnique(Techniques.Tada);
         //Title properties
         configSplash.setTitleSplash("ECycle");
         configSplash.setTitleTextColor(R.color.colorWhite);

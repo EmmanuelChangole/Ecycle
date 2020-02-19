@@ -1,41 +1,26 @@
 package com.electronicrecycle.ecycle.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
-import android.widget.Toast;
 
 import com.electronicrecycle.ecycle.R;
 import com.electronicrecycle.ecycle.adapters.CustomListAdapter;
-import com.electronicrecycle.ecycle.adapters.EcycleContent;
-import com.electronicrecycle.ecycle.adapters.SliderAdapterExample;
 import com.electronicrecycle.ecycle.models.ListItems;
-import com.innodroid.expandablerecycler.ExpandableRecyclerAdapter;
-import com.smarteist.autoimageslider.IndicatorAnimations;
-import com.smarteist.autoimageslider.SliderAnimations;
-import com.smarteist.autoimageslider.SliderView;
-
 import java.util.ArrayList;
 
-import butterknife.Bind;
-import butterknife.ButterKnife;
-
 public class EcycleActivity extends AppCompatActivity {
-    /*EcycleContent adapter;
-    @Bind(R.id.main_recycler)
-    RecyclerView recycler;*/
+
     RelativeLayout mainLayout;
     View view;
     boolean check =false;
+
+
 
 
     @Override
@@ -57,26 +42,20 @@ public class EcycleActivity extends AppCompatActivity {
                       switch (position)
                       {
                           case 0:
-                              /*Intent intent=new Intent(EcycleActivity.this,TestUi.class);
-                              startActivity(intent);*/
-
-                              mainLayout=(RelativeLayout)findViewById(R.id.rootLayout);
-                              view=getLayoutInflater().inflate(R.layout.content_view,mainLayout,true);
-                              ((ViewGroup)mainLayout.getParent()).removeView(mainLayout);
-                               mainLayout.addView(view);
-
-
-
-
+                              Intent intent=new Intent(EcycleActivity.this, WasteContent.class);
+                              startActivity(intent);
                               break;
                           case 1:
-
+                              Intent wasteAccumulate=new Intent(EcycleActivity.this, WasteAccumulation.class);
+                              startActivity(wasteAccumulate);
                               break;
                           case 2:
-
+                              Intent whyEwaste=new Intent(EcycleActivity.this, WhyEwaste.class);
+                              startActivity(whyEwaste);
                               break;
                           case 3:
-
+                              Intent regCompany=new Intent(EcycleActivity.this, RegCompanies.class);
+                              startActivity(regCompany);
                               break;
 
 

@@ -2,10 +2,12 @@ package com.electronicrecycle.ecycle.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.electronicrecycle.ecycle.R;
@@ -20,6 +22,10 @@ public class StatisticsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_statistic);
+
+        RelativeLayout layout=(RelativeLayout)findViewById(R.id.relativeLayout3);
+        layout.setVisibility(View.GONE);
+
         ArrayList userList = getListData();
         final ListView lv = (ListView) findViewById(R.id.statisticsList);
         lv.setAdapter(new CustomListAdapter(this, userList));
@@ -28,7 +34,17 @@ public class StatisticsActivity extends AppCompatActivity {
                     @Override
                     public void onItemClick(AdapterView<?> parent, View view, int position, long id)
                     {
-                        Toast.makeText(StatisticsActivity.this, "you have clicked "+position, Toast.LENGTH_SHORT).show();
+                       switch (position)
+                       {
+                           case 0:
+                               Intent facts=new Intent(StatisticsActivity.this,TipsOnEwaste.class);
+                               startActivity(facts);
+                               break;
+                           case 1:
+                               Intent stats=new Intent(StatisticsActivity.this,StatisticsOnWaste.class);
+                               startActivity(stats);
+                               break;
+                       }
 
                     }
                 }

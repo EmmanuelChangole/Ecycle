@@ -2,10 +2,12 @@ package com.electronicrecycle.ecycle.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.electronicrecycle.ecycle.R;
@@ -21,6 +23,9 @@ public class EffectsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_effects);
 
+        RelativeLayout layout=(RelativeLayout)findViewById(R.id.relativeLayout3);
+        layout.setVisibility(View.GONE);
+
         ArrayList userList = getListData();
         final ListView lv = (ListView) findViewById(R.id.effectList);
         lv.setAdapter(new CustomListAdapter(this, userList));
@@ -29,7 +34,18 @@ public class EffectsActivity extends AppCompatActivity {
                     @Override
                     public void onItemClick(AdapterView<?> parent, View view, int position, long id)
                     {
-                        Toast.makeText(EffectsActivity.this, "you have clicked "+position, Toast.LENGTH_SHORT).show();
+                       switch (position)
+                       {
+                           case 0:
+                               Intent bodyEffects=new Intent(EffectsActivity.this,EffectsToBody.class);
+                               startActivity(bodyEffects);
+
+                               break;
+                           case 1:
+                               Intent envEffects=new Intent(EffectsActivity.this,EffectToEnvironment.class);
+                               startActivity(envEffects);
+                               break;
+                       }
 
                     }
                 }

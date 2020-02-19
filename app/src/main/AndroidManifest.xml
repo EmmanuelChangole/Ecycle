@@ -9,10 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ui.WasteAccumulation" android:theme="@style/AppTheme_Custom_statistics"></activity>
+        <activity android:name=".ui.FactsOnWaste" android:theme="@style/AppTheme_Custom_statistics"></activity>
+        <activity android:name=".ui.StatisticsOnWaste" android:theme="@style/AppTheme_Custom_statistics"></activity>
+        <activity android:name=".ui.CurbingWaste" android:theme="@style/AppTheme_Custom_manage"></activity>
+        <activity android:name=".ui.ProductsOfEwaste" android:theme="@style/AppTheme_Custom_manage"></activity>
+        <activity android:name=".ui.TipsOnEwaste" android:theme="@style/AppTheme_Custom_manage"></activity>
+        <activity android:name=".ui.EffectsToBody" android:theme="@style/AppTheme_Custom_effects"></activity>
+        <activity android:name=".ui.EffectToEnvironment" android:theme="@style/AppTheme_Custom_effects"></activity>
+        <activity android:name=".ui.RegCompanies" android:theme="@style/AppTheme_Custom_statistics"></activity>
+        <activity android:name=".ui.WhyEwaste" android:theme="@style/AppTheme_Custom_statistics"></activity>
         <activity android:name=".ui.StatisticsActivity" android:theme="@style/AppTheme_Custom_statistics"></activity>
         <activity android:name=".ui.ManagementActivity" android:theme="@style/AppTheme_Custom_manage" />
         <activity android:name=".ui.EffectsActivity" android:theme="@style/AppTheme_Custom_effects"/>
-        <activity android:name=".ui.TestUi" android:theme="@style/AppTheme_Custom_effects"/>
+        <activity android:name=".ui.WasteContent" android:theme="@style/AppTheme_Custom_effects"/>
         <activity
             android:name=".ui.EcycleActivity"
             android:theme="@style/AppTheme_Custom_E_cycle" />

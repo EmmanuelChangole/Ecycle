@@ -47,14 +47,16 @@
             </RelativeLayout>
 
         </RelativeLayout>
+
         <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigationView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/colorWhite"
             android:layout_gravity="start"
+            android:background="@color/colorWhite"
             android:foregroundGravity="left"
-            app:headerLayout="@layout/head_content_navigation"
             android:minHeight="20dp"
+            app:headerLayout="@layout/head_content_navigation"
             app:menu="@menu/nav_menu">
 
         </com.google.android.material.navigation.NavigationView>
